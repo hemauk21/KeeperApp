@@ -1,13 +1,15 @@
 import React from 'react';
 
 
-function Note(Props){
+function Note(props){
 return(
- <div className="note">
- <p><h1>{Props.title}</h1></p>
- <p>{Props.content}</p>
+
+ <div className="noteContainer noteDiv">
+ <p><h1>{props.title}</h1></p>
+ <p>{props.content}</p>
+<button className="btnCls">Delete</button>
  </div>   
- 
+  
     
 );
 }
