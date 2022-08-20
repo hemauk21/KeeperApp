@@ -14,13 +14,13 @@ function CreateArea(props) {
         setNote((prevNote) => {
             return {
                 ...prevNote,
-                [name]: value
+                [name]: value  //this key:value pair.From ES6 keyvariable(i.e name) should enclose in square bracket. 
             }
         })
     }
     function submitNote(event) {
         event.preventDefault();
-
+           //accessing this onAdd fn from createArea component in app 
         props.onAdd(note);
 
 
